@@ -12,6 +12,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
             Console.WriteLine(name);
             Console.WriteLine(name);
             Console.WriteLine(name);
+            Console.WriteLine("This is branch1");
         }
     }
 }
