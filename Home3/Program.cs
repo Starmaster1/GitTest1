@@ -17,11 +17,8 @@ namespace Home3
             Task7();
         }
 
-        static void Task0() {
-            /*Создайте массив целых чисел. Напишете программу, 
-             * которая выводит сообщение о том, входит ли заданное 
-             * число в массив или нет.  
-             * Пусть число для поиска задается с консоли.*/
+        static void Task0()
+        {
             int[] array = new int[] { 1, 4, 5, 6, 24, 1, 6, 3, 4, 4 };
             Console.WriteLine($"Enter number of array:");
             var number = Console.ReadLine();
@@ -49,9 +46,6 @@ namespace Home3
 
         static void Task1()
         {
-            /*1. Создайте массив целых чисел. Удалите все вхождения заданного числа из массива.
-             * Пусть число задается с консоли. Если такого числа нет - выведите сообщения об этом.
-             * В результате должен быть новый массив без указанного числа.*/
             int[] array = { 1, 4, 5, 6, 24, 1, 6, 3, 4, 4 };
             int[] newArray = new int[10];
 
@@ -90,23 +84,22 @@ namespace Home3
             {
                 Console.WriteLine("Array dosnt have the number :(");
             }
-
-
         }
 
         static void Task2()
         {
             var rand = new Random();
-        Console.WriteLine("Enter range of array: ");
+            Console.WriteLine("Enter range of array: ");
             var input = Console.ReadLine();
-            if (int.TryParse(input, out int range) == false) {
+            if (int.TryParse(input, out int range) == false)
+            {
                 Console.WriteLine("Error: Wrong number!!!");
             }
             int[] array = new int[range];
             Console.WriteLine("Array is: ");
             for (int i = 0; i < array.Length; i++)
             {
-                array[i] = rand.Next(1,20);
+                array[i] = rand.Next(1, 20);
                 Console.Write($"{array[i]},");
             }
             Console.WriteLine("\nAverage: " + array.Average());
@@ -116,10 +109,11 @@ namespace Home3
 
         static void Task3()
         {
-            int[] array1 = { 1, 4, 4, 2, 4};
-            int[] array2 = { 2, 3, 7, 10, 40};
+            int[] array1 = { 1, 4, 4, 2, 4 };
+            int[] array2 = { 2, 3, 7, 10, 40 };
             Console.WriteLine("First array is: ");
-            foreach (int element in array1) {
+            foreach (int element in array1)
+            {
                 Console.Write($"{element},");
             };
             Console.WriteLine("\nSecond array is: ");
@@ -136,7 +130,7 @@ namespace Home3
 
         public static void Task4()
         {
-            int[] array = { 1,4,3,2,5};
+            int[] array = { 1, 4, 3, 2, 5 };
             Console.WriteLine("Array is: ");
             for (int i = 0; i < array.Length; i++)
             {
@@ -145,22 +139,22 @@ namespace Home3
             Console.WriteLine("\nNew array is: ");
             for (int i = 0; i < array.Length; i++)
             {
-                if (array[i] %2 == 1)
+                if (array[i] % 2 == 1)
                 {
                     array[i] = 0;
                 }
                 Console.Write($"{array[i]},");
             }
-
         }
 
-        public static void Task5() {
-            string[] maleName = {"Sasha","Mike","Paul","Steven","Alex","Pasha"};
-            string[] femaleName = {"Kate","Nataly","Jenna","Julia","Ann"};
-            
+        public static void Task5()
+        {
+            string[] maleName = { "Sasha", "Mike", "Paul", "Steven", "Alex", "Pasha" };
+            string[] femaleName = { "Kate", "Nataly", "Jenna", "Julia", "Ann" };
+
             Console.WriteLine("\nMale names after sort: \n");
-            Array.Sort( maleName );
-            Array.Sort( femaleName );
+            Array.Sort(maleName);
+            Array.Sort(femaleName);
             foreach (var item in maleName)
             {
                 Console.WriteLine($"{item}");
@@ -174,7 +168,7 @@ namespace Home3
 
         public static void Task6()
         {
-            int[] array = {6,3,1,8,7};
+            int[] array = { 6, 3, 1, 8, 7 };
             Console.WriteLine("Unsorted array is: ");
             foreach (var item in array)
             {
@@ -189,7 +183,7 @@ namespace Home3
                         (array[i], array[i + 1]) = (array[i + 1], array[i]);
                     }
                 }
-            } 
+            }
             Console.WriteLine("\nSorted array is: ");
             foreach (var item in array)
             {
@@ -216,7 +210,6 @@ namespace Home3
             {
                 Console.Write($"{item}, ");
             }
-
         }
 
     }
