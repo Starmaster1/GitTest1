@@ -1,18 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 
-namespace MyApp // Note: actual namespace depends on the project name.
+namespace MyApp // My homework №1.
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Как вас зовут?"); 
             var name = Console.ReadLine();
-            Console.WriteLine(name);
-            Console.WriteLine(name);
-            Console.WriteLine(name);
-            Console.WriteLine("This is branch1");
+            Console.WriteLine("Hello, "+name);
         }
     }
 }
