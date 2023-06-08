@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson11_SeleniumTest", "Le
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson12_Selenium", "Lesson12_Selenium\Lesson12_Selenium.csproj", "{443AB7EF-4C3A-48BA-9004-E3CCED7F315F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson13_PageObjectPattern", "Lesson13_PageObjectPattern\Lesson13_PageObjectPattern.csproj", "{AC9B4AF1-6107-4553-BDAD-092959D32B8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson13_PageObjectPattern", "Lesson13_PageObjectPattern\Lesson13_PageObjectPattern.csproj", "{AC9B4AF1-6107-4553-BDAD-092959D32B8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson19 Selenium WebDriver. Advanced", "Lesson19 Selenium WebDriver. Advanced\Lesson19 Selenium WebDriver. Advanced.csproj", "{95A4B922-DA64-4328-9385-9E0F22F18B24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{AC9B4AF1-6107-4553-BDAD-092959D32B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC9B4AF1-6107-4553-BDAD-092959D32B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC9B4AF1-6107-4553-BDAD-092959D32B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A4B922-DA64-4328-9385-9E0F22F18B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A4B922-DA64-4328-9385-9E0F22F18B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A4B922-DA64-4328-9385-9E0F22F18B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A4B922-DA64-4328-9385-9E0F22F18B24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Lesson13_PageObjectPattern.Core;
-using Lesson13_PageObjectPattern.PageObject;
+using Lesson19_Selenium_WebDriver._Advanced.Core;
+using Lesson19_Selenium_WebDriver._Advanced.PageObject;
 using OpenQA.Selenium;
 
-namespace Lesson13_PageObjectPattern.Test
+namespace Lesson19_Selenium_WebDriver._Advanced.Test
 {
     internal class LoginTest : BaseTest
     {
@@ -15,7 +15,7 @@ namespace Lesson13_PageObjectPattern.Test
         public void LoginStandartUser()
         {
             var page = new LoginPage(driver);
-            Browser.Instance.NaigateToUrl(LoginPage.url);
+            Browser.Instance.NavigateToUrl(LoginPage.url);
             page.LoginAsStandartUser();
         }
     }
