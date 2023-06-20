@@ -24,7 +24,7 @@ namespace SaleForceTests
                 .OpenPage()
                 .Login(user);
             string expectedUrl = "https://ttt-a8-dev-ed.develop.lightning.force.com/lightning/setup/SetupOneHome/home";
-            Assert.AreEqual(expectedUrl, Browser.Instance.GetCurrentUrl());
+            Assert.That(Browser.Instance.GetCurrentUrl(), Is.EqualTo(expectedUrl));
         }
     }
 }
