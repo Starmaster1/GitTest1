@@ -10,21 +10,21 @@ namespace Lesson19_Selenium_WebDriver._Advanced.Test
 {
     internal class BaseTest
     {
-       // protected WebDriver driver;
+        protected WebDriver driver;
 
         [SetUp]
         public void SetUp()
         {
-            //driver = new ChromeDriver();
-            //driver.Manage().Window.Maximize();
-           // driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
         }
 
         [TearDown]
         public void TearDown()
         {
-            // driver.Close(); // Закрывает текущую вкладку
-            // driver.Quit();
+            driver.Close(); // Закрывает текущую вкладку
+             driver.Quit();
         }
 
     }
